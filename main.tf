@@ -9,3 +9,12 @@ resource "aws_s3_bucket" "my_bucket" {
     Environment = "Dev"
   }
 }
+
+resource "aws_s3_bucket" "testbucket" {
+  bucket = "DV-03032025"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
